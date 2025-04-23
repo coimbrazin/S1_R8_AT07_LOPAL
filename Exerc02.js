@@ -21,5 +21,5 @@ while (tentativas >= 1) {
 if (acertou == true) {
   console.log(`Parabéns!! Você acertou, o número certo é [${numeroAleatorio}]`);
 } else {
-  console.log(`Infelizmente você não conseguiu acertar o númmero, o número certo é [${numeroAleatorio}]`)
+  console.log(`Infelizmente você não conseguiu acertar o número, o número certo é [${numeroAleatorio}]`)
 }
