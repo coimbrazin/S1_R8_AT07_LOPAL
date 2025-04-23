@@ -3,23 +3,23 @@ let tentativas = 3;
 let acertou = false;
 
 while (tentativas >= 1) {
-  let chute = parseInt(prompt("Digite um número entre 1 e 10 para ganhar um presente misterioso!"));
+  let chute = parseInt(prompt("Digite um número entre 1 e 10 para ganhar um presente misterioso!. Você tem 3 tentativas"));
   if (isNaN(chute) || chute < 1 || chute > 10) {
-    console.log("Seu chute é inválido tente novamente")
+    alert("Seu chute é inválido tente novamente")
   } else if (chute == numeroAleatorio) {
     acertou = true;
     break;
   } else if (chute > numeroAleatorio) {
-    console.log("O número é menor");
+    alert("O número é menor");
   } else {
-    console.log("O número é maior");
+    alert("O número é maior");
   }
   tentativas--
 
 }
 
 if (acertou == true) {
-  console.log(`Parabéns!! Você acertou, o número certo é [${numeroAleatorio}]`);
+  alert(`Parabéns!! Você acertou, o número certo é [${numeroAleatorio}]`);
 } else {
-  console.log(`Infelizmente você não conseguiu acertar o número, o número certo é [${numeroAleatorio}]`)
+  alert(`Infelizmente você não conseguiu acertar o número, o número certo é [${numeroAleatorio}]`)
 }
